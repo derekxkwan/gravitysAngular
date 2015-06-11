@@ -43,7 +43,7 @@ whiteNoise2.onaudioprocess = function(e) {
 osc = context.createOscillator();
 osc.connect(gain);
 osc.frequency.value=2500;
-osc.noteOn(0);
+osc.start(0);
 filterNode = context.createBiquadFilter();
 filterNode.type = "bandpass";
 filterNode.frequency.value = 750;
